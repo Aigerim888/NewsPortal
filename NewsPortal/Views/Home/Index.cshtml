@@ -1,0 +1,23 @@
+﻿@using NewsPortal.Areas.Admin.Models;  
+@model NewsPortal.ViewModel.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<ul>
+     
+@foreach(Category category in Model.Categories)
+{
+        <li>@category.Name</li>
+     
+        @foreach(New news in Model.News)
+        {
+                <li>@news.Name</li>
+                <li>@news.Name</li>
+                <li>@news.Name</li>
+            
+            
+        }        
+}    
+ </ul>
+
